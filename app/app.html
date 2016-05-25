@@ -1,0 +1,17 @@
+<ion-menu id="rightMenu" side="right" type="overlay" [content]="content">
+
+    <ion-toolbar primary>
+        <ion-title>Menu Right</ion-title>
+    </ion-toolbar>
+    <ion-content>
+        <ion-list>
+            <ion-item>
+                <button menuToggle>
+                    <ion-icon item-left name="menu"></ion-icon>
+                    Close
+                </button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content></ion-nav>
